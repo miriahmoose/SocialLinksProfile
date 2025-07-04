@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --primary-header: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  --font-header: 26px;
+  --font-paragraph: 14px;
+  --weight-400: 400;
+  --weight-600: 600;
+  --weight-700: 700;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--grey-900);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: var(--grey-800);
+  width: 24rem;
+  border-radius: 16px;
+  margin: 1rem;
+}
+
+.card,
+.card-header,
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header {
+  padding: 2rem 0 1rem 0;
+}
+
+.card-image {
+  height: 6rem;
+  border-radius: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-weight: var(--weight-600);
+  font-size: var(--font-header);
+  margin: 0;
+}
+
+.card-subtitle {
+  font-weight: var(--weight-600);
+  color: var(--primary-header);
+  font-size: var(--font-paragraph);
+}
+
+.card-blurb {
+  font-size: var(--font-paragraph);
+}
+
+.card-body {
+  padding-bottom: 1rem;
+}
+
+.card-link {
+  background-color: var(--grey-700);
+  font-size: var(--font-paragraph);
+  font-weight: var(--weight-600);
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 3rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.card-link:hover,
+.card-link:focus {
+  background-color: var(--primary-header);
+  color: var(--grey-900);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--primary-header);
+}
